@@ -1,0 +1,50 @@
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar {
+  display: grid;
+  padding: 0rem 3rem;
+  grid-template-columns: auto 1fr 2fr auto;
+  align-items: center;
+  column-gap: 1rem;
+  grid-template-areas: "heading sections . buttons";
+}
+
+.nav-logo-heading {
+  grid-area: heading;
+  margin-right: 3rem;
+}
+
+.navbar-sections {
+  display: flex;
+  justify-content: space-between;
+  grid-area: sections;
+}
+
+.navbar-buttons {
+  grid-area: buttons;
+}
+
+.login-button {
+  margin-right: 1rem;
+}
+
+.footer {
+  display: grid;
+  padding: 3.5rem 3rem;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
