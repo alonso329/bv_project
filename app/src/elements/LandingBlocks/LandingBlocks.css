@@ -1,0 +1,23 @@
+.block-layout img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.block-title {
+  font-weight: bold;
+}
+
+.block-content {
+  color: #999999;
+}
+
+.learn-more {
+  color: #107ef8;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}

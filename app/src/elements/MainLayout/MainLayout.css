@@ -1,0 +1,103 @@
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Ubuntu";
+}
+
+.navbar {
+  display: grid;
+  padding: 0rem 3rem;
+  grid-template-columns: auto 1fr 2fr auto;
+  align-items: center;
+  column-gap: 1rem;
+  grid-template-areas: "heading sections . buttons";
+  font-family: "Ubuntu";
+}
+
+.nav-logo-heading {
+  grid-area: heading;
+  margin-right: 3rem;
+}
+
+.navbar-sections {
+  display: flex;
+  justify-content: space-between;
+  grid-area: sections;
+  color: #107ef8;
+  font-weight: 500;
+  
+}
+
+.navbar-sections p:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.navbar-buttons {
+  grid-area: buttons;
+}
+
+.login-button {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid #107ef8;
+  color: #107ef8;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  margin-right: 1rem;
+}
+
+.login-button:hover {
+  background-color: #107ef8;
+  color: white;
+}
+
+.register-button {
+  text-decoration: none;
+  background-color: #107ef8;
+  border: 0px;
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 1px solid #107ef8;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.register-button:hover {
+  background-color: #195dda;
+}
+
+.footer {
+  display: grid;
+  padding: 3rem 3rem;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 1rem;
+  font-family: "Ubuntu";
+}
+
+.footer-sections {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.footer-sections p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    color: #5b5b5b;
+    font-size: 13px;
+}
